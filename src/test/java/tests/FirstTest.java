@@ -2,16 +2,11 @@ package tests;
 
 import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserType;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
-
 import base.BaseTest;
 
 public class FirstTest extends BaseTest {
 	@Test
-	public void verifyTitle() {
+	public void verifyTitle1() {
 	
 		page.navigate("https://google.com/ncr");
 		if (page.isVisible("button:has-text('Accept all')")) {
